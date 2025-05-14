@@ -1,0 +1,37 @@
+{
+  "visualization": {
+    "id": "riseac-custom-dashboard",
+    "label": "RISEAC Custom Dashboard",
+    "description": "Custom data visualizations for RISEAC test taker analysis",
+    "icon": "https://example.com/icon.png",
+    "components": {
+      "main": {
+        "path": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/riseac-custom-dashboard.js",
+        "type": "visualization"
+      }
+    }
+  },
+  "options": {
+    "defaultData": true,
+    "dataTypes": ["STRING", "NUMBER", "DATE"],
+    "options": [
+      {
+        "id": "color_scheme",
+        "label": "Color Scheme",
+        "type": "select",
+        "options": ["Default", "Warm", "Cool"],
+        "defaultValue": "Default"
+      },
+      {
+        "id": "display_mode",
+        "label": "Display Mode",
+        "type": "select",
+        "options": ["Markers", "Heatmap"],
+        "defaultValue": "Markers"
+      }
+    ]
+  },
+  "access": {
+    "allowedDomains": ["githubusercontent.com"]
+  }
+}

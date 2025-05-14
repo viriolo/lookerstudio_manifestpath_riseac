@@ -1,0 +1,93 @@
+{
+  "dashboard": [
+    {
+      "pageTitle": "Test Takers Dashboard",
+      "visualizations": [
+        {
+          "type": "pie_chart",
+          "title": "Current Place of Engagement",
+          "dimensions": ["Place of Engagement"],
+          "metrics": ["Count"],
+          "options": {
+            "showLabels": true,
+            "sliceColors": ["#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0", "#9966FF", "#FF9F40", "#66FF66", "#FF6666"]
+          }
+        },
+        {
+          "type": "donut_chart",
+          "title": "Gender Distribution",
+          "dimensions": ["Gender"],
+          "metrics": ["Count"],
+          "options": {
+            "donutHole": 0.4,
+            "showLabels": true,
+            "sliceColors": ["#8e44ad", "#3498db"]
+          }
+        },
+        {
+          "type": "geo_chart",
+          "title": "Test Takers by Location",
+          "dimensions": ["Province"],
+          "metrics": ["Count"],
+          "options": {
+            "region": "PG",
+            "displayMode": "markers",
+            "colorAxis": {
+              "colors": ["#f1c40f", "#e67e22", "#e74c3c"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "pageTitle": "Demographics",
+      "visualizations": [
+        {
+          "type": "bar_chart",
+          "title": "Age Range Distribution",
+          "dimensions": ["Age Range"],
+          "metrics": ["Count"],
+          "options": {
+            "orientation": "horizontal",
+            "colors": ["#2ecc71", "#f39c12", "#c0392b", "#2980b9", "#8e44ad"]
+          }
+        },
+        {
+          "type": "stacked_bar_chart",
+          "title": "Education Level vs Gender",
+          "dimensions": ["Education Level", "Gender"],
+          "metrics": ["Count"],
+          "options": {
+            "stacked": true,
+            "colors": ["#3498db", "#e74c3c"]
+          }
+        }
+      ]
+    },
+    {
+      "pageTitle": "Test Performance",
+      "visualizations": [
+        {
+          "type": "column_chart",
+          "title": "Test Performance by Gender",
+          "dimensions": ["Gender"],
+          "metrics": ["Test #"],
+          "options": {
+            "colors": ["#3498db", "#e74c3c"],
+            "showLabels": true
+          }
+        },
+        {
+          "type": "table",
+          "title": "Detailed Test Scores",
+          "dimensions": ["First Name", "Last Name", "Test #"],
+          "metrics": ["Score"],
+          "options": {
+            "showPagination": true,
+            "sortable": true
+          }
+        }
+      ]
+    }
+  ]
+}
