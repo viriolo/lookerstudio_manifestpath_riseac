@@ -1,0 +1,1 @@
+# lookerstudio_manifestpath_riseac
